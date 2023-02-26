@@ -1,0 +1,19 @@
+{
+  "name": "username-generator",
+  "version": "1.0.0",
+  "description": "Takes a username that is taken and suggests alternatives",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luke-JH/username-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luke-JH/username-generator/issues"
+  },
+  "homepage": "https://github.com/Luke-JH/username-generator#readme"
+}
