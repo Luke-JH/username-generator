@@ -11,10 +11,10 @@
       <div class="field">
         <div class="subtitle">Please input your username</div>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input  is-rounded column is-one-third" type="text">
         </div>
       </div>
-      <button class="level-right button is-warning">Generate Alternatives</button>
+      <button class="level-right button is-rounded is-primary">Generate Alternatives</button>
     </section>
   </main>
 </template>
