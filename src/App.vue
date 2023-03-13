@@ -1,10 +1,21 @@
 <template>
   <header>
-    <div>Welcome to the Username Generator!</div>
+    <section class="section">
+      <div class="title">Welcome to the Username Generator!</div>
+    </section>
   </header>
 
   <main>
-    <div>Please input your username and nationality</div>
+    <section class="section is-level">
+
+      <div class="field">
+        <div class="subtitle">Please input your username</div>
+        <div class="control">
+          <input class="input  is-rounded column is-one-third" type="text">
+        </div>
+      </div>
+      <button class="level-right button is-rounded is-primary">Generate Alternatives</button>
+    </section>
   </main>
 </template>
 
