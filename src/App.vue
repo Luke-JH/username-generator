@@ -27,6 +27,7 @@
       <p>Thank you for using the username generator :)</p>
     </div>
   </footer>
+  
 </template>
 
 <script>
