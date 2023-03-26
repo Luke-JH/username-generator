@@ -16,7 +16,12 @@
           <input class="input  is-rounded column is-one-third" type="text" v-model="this.name">
         </div>
       </div>
-      <button class="level-right button is-rounded is-primary" @click="this.nameGen(this.name, this.additions)">Generate Alternatives</button>
+      <button class="level-right button is-rounded is-primary" @click="this.nameGen(this.name, this.additions)">
+        Generate Alternatives
+      </button>
+      <div class="tile is-vertical is-light">
+        <li v-for="item in this.newNames">{{ item }}</li>
+      </div>
     </section>
   </main>
 
@@ -35,15 +40,18 @@ export default {
     data(){
       return {
         name: '',
-        additions: ['.','-','_']
+        additions: ['.','-','_'],
+        newNames: []
       }
     },
     methods: {
       nameGen(name, additions){
+        this.newNames = []
         additions.forEach((item) => {
           let newName = name.concat(item)
-          console.log(newName)
+          this.newNames = [...this.newNames, newName]
         })
+        console.log(this.newNames)
       }
     }
 }
