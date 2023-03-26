@@ -13,10 +13,10 @@
       <div class="field">
         <div class="subtitle">Please input your username</div>
         <div class="control">
-          <input class="input  is-rounded column is-one-third" type="text">
+          <input class="input  is-rounded column is-one-third" type="text" v-model="this.name">
         </div>
       </div>
-      <button class="level-right button is-rounded is-primary" @click="this.myfunc()">Generate Alternatives</button>
+      <button class="level-right button is-rounded is-primary" @click="this.nameGen(this.name, this.additions)">Generate Alternatives</button>
     </section>
   </main>
 
@@ -31,4 +31,20 @@
 </template>
 
 <script>
+export default {
+    data(){
+      return {
+        name: '',
+        additions: ['.','-','_']
+      }
+    },
+    methods: {
+      nameGen(name, additions){
+        additions.forEach((item) => {
+          let newName = name.concat(item)
+          console.log(newName)
+        })
+      }
+    }
+}
 </script>
