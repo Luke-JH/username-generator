@@ -25,6 +25,8 @@
     </section>
   </main>
 
+  <copybutton/>
+
   <section class="section is-large"></section>
   <footer class="footer">
     <div class="content has-text-centered">
@@ -36,7 +38,13 @@
 </template>
 
 <script>
-export default {
+
+  import copybutton from './components/copy-button.vue'
+
+  export default {
+    components: {
+      copybutton
+    },
     data(){
       return {
         name: '',
