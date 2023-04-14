@@ -13,7 +13,7 @@
 			<div class="field">
 				<div class="subtitle">Please input your username</div>
 				<div class="control">
-				<input class="input  is-rounded column is-one-third" type="text" v-model="this.name">
+				<input class="input  is-rounded column is-one-third" type="text" v-model="this.name" @keyup.enter="this.nameGen(this.name, this.additions)">
 				</div>
 			</div>
 			<button class="level-right button is-rounded is-primary" @click="this.nameGen(this.name, this.additions)">
@@ -59,7 +59,6 @@
 			let newName = name.concat(item)
 			this.newNames = [...this.newNames, newName]
 			})
-			console.log(this.newNames)
 		}
 		}
 	}
