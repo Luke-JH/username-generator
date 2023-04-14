@@ -48,7 +48,7 @@
 		data(){
 		return {
 			name: '',
-			additions: ['.','-','_'],
+			additions: ['.','-','_','.-','._','-.','-_','_.','_-'],
 			newNames: [],
 		}
 		},
@@ -56,8 +56,9 @@
 		nameGen(name, additions){
 			this.newNames = []
 			additions.forEach((item) => {
-			let newName = name.concat(item)
-			this.newNames = [...this.newNames, newName]
+			let newName1 = name.concat(item)
+			let newName2 = item.concat(name)
+			this.newNames = [...this.newNames, newName1, newName2]
 			})
 		}
 		}
