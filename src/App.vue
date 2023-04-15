@@ -2,7 +2,7 @@
 
 	<header>
 		<nav class="hero is-light">
-			<img class="container image is-128x128" src="./assets/logo.png">
+			<img class="container image is-128x128" src="src/assets/logo.png">
 		</nav>
 
 	</header>
