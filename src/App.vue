@@ -26,7 +26,7 @@
 	</main>
 
 
-	<section class="section is-large"></section>
+	<!-- <section class="section is-large"></section> -->
 	<footer class="footer">
 		<div class="content has-text-centered">
 		<p><strong>copyright © 2023</strong></p>
@@ -52,14 +52,18 @@
 			newNames: [],
 		}
 		},
-		methods: {
+		methods: {		
 		nameGen(name, additions){
-			this.newNames = []
-			additions.forEach((item) => {
-			let newName1 = name.concat(item)
-			let newName2 = item.concat(name)
-			this.newNames = [...this.newNames, newName1, newName2]
-			})
+			if (name === '') {
+				this.newNames = []
+			} else {
+				this.newNames = []
+				additions.forEach((item) => {
+				let newName1 = name.concat(item)
+				let newName2 = item.concat(name)
+				this.newNames = [...this.newNames, newName1, newName2]
+				})
+			}
 		}
 		}
 	}
