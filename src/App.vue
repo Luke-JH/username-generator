@@ -26,7 +26,7 @@
 	</main>
 
 
-	<section class="section is-large"></section>
+	<!-- <section class="section is-large"></section> -->
 	<footer class="footer">
 		<div class="content has-text-centered">
 		<p><strong>copyright © 2023</strong></p>
@@ -52,7 +52,7 @@
 			newNames: [],
 		}
 		},
-		methods: {
+		methods: {		
 		nameGen(name, additions){
 			this.newNames = []
 			additions.forEach((item) => {
