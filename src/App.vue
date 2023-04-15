@@ -54,12 +54,16 @@
 		},
 		methods: {		
 		nameGen(name, additions){
-			this.newNames = []
-			additions.forEach((item) => {
-			let newName1 = name.concat(item)
-			let newName2 = item.concat(name)
-			this.newNames = [...this.newNames, newName1, newName2]
-			})
+			if (name === '') {
+				this.newNames = []
+			} else {
+				this.newNames = []
+				additions.forEach((item) => {
+				let newName1 = name.concat(item)
+				let newName2 = item.concat(name)
+				this.newNames = [...this.newNames, newName1, newName2]
+				})
+			}
 		}
 		}
 	}
