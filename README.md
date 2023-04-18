@@ -1,4 +1,4 @@
-# username-generator
+# username-gen.com
 Takes a username that is taken and suggests alternatives
 
 ## vue.js
