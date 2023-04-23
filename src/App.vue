@@ -10,7 +10,7 @@
 	<main>
 		<section class="section">
 			<div class="title">Username Generator</div>
-			<h4 class="title is-5">Create alternative username options for if yours is taken</h4>
+			<h5 class="title is-5">Create alternative username options for if yours is taken</h5>
 			<div class="field">
 			<input class="input  is-rounded column is-one-third" 
 				type="text" 
