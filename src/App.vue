@@ -9,12 +9,14 @@
 
 	<main>
 		<section class="section">
-			<div class="title">Welcome to the Username Generator!</div>
+			<div class="title">Username Generator</div>
+			<h4 class="title is-5">Create alternative username options for if yours is taken</h4>
 			<div class="field">
-				<div class="subtitle">Please input your username</div>
-				<div class="control">
-				<input class="input  is-rounded column is-one-third" type="text" v-model="this.name" @keyup.enter="this.nameGen(this.name, this.additions)">
-				</div>
+			<input class="input  is-rounded column is-one-third" 
+				type="text" 
+				placeholder="Please input your username" 
+				v-model="this.name" 
+				@keyup.enter="this.nameGen(this.name, this.additions)">
 			</div>
 			<button class="level-right button is-rounded is-primary" @click="this.nameGen(this.name, this.additions)">
 				Generate Alternatives
