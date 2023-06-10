@@ -2,7 +2,9 @@
   "name": "vue-project",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://www.username-gen.com/",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -13,6 +15,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "gh-pages": "^5.0.0",
     "sass": "^1.58.3",
     "vite": "^4.3.9"
   }
