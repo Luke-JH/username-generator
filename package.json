@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "echo https://www.username-gen.com/ > ./dist/CNAME && vite build",
+    "build": "mkdir dist && echo https://www.username-gen.com/ > ./dist/CNAME && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
