@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "echo https://www.username-gen.com/ > ./build/CNAME && gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
