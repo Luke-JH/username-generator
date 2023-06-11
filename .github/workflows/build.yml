@@ -39,10 +39,10 @@ jobs:
     # - run: git status
 
     - run: |
-        git branch -D gh-pages || true
-        git switch -c gh-pages
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git branch -D gh-pages || true
+        git switch -c gh-pages
         git status
         git add -f dist
         git status
