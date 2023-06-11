@@ -43,7 +43,6 @@ jobs:
         git checkout -b gh-pages
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git checkout -f main -- dist
         git status
         git add -f dist
         git status
