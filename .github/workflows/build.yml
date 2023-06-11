@@ -43,7 +43,10 @@ jobs:
         git checkout -b gh-pages
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git checkout main -- dist
+        git status
         git add -f dist
+        git status
         git commit -m "Update gh-pages with dist folder"
         git push -f origin gh-pages
         git checkout main
