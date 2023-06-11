@@ -33,7 +33,7 @@ jobs:
 
     - run: git checkout gh-pages || git checkout -b gh-pages
     - run: git rm -rf .
-    - run: git checkout main -- dist
+    - run: git show main:dist > dist.zip && unzip dist.zip && rm dist.zip
     - run: git status
 
     # Commit and push changes to the gh-pages branch
