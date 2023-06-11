@@ -31,10 +31,10 @@ jobs:
     # The build command also creates a CNAME file as defined in package.json
     - run: npm run build --if-present
 
-    - run: git stash dist -f
+    - run: git stash dist
     - run: git checkout gh-pages || git checkout -b gh-pages
     - run: git rm -rf .
-    - run: git stash pop dist -f
+    - run: git stash pop dist
 
     # Commit and push changes to the gh-pages branch
     - run: git config user.name "${GITHUB_ACTOR}"
