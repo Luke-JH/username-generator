@@ -44,8 +44,8 @@ jobs:
         git push origin --delete gh-pages || true
         git switch -c gh-pages
         git status
-      # git add -f dist
-      # git status
-      # git commit -m "Update gh-pages with dist folder"
-      # git push -f origin gh-pages
-      # git checkout main
+        git add -f dist
+        git status
+        git commit -m "Update gh-pages with dist folder"
+        git push -f origin gh-pages
+        git checkout main
