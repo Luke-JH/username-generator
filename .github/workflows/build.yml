@@ -33,10 +33,10 @@ jobs:
 
     - run: ls
 
-    - run: git checkout gh-pages || git checkout -b gh-pages
-    - run: git rm -rf .
-    - run: git show main:dist > dist.zip && unzip dist.zip && rm dist.zip
-    - run: git status
+    # - run: git checkout gh-pages || git checkout -b gh-pages
+    # - run: git rm -rf .
+    # - run: git show main:dist > dist.zip && unzip dist.zip && rm dist.zip
+    # - run: git status
 
     - run: |
         git branch -D gh-pages || true
