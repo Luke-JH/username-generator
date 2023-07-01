@@ -35,7 +35,7 @@ jobs:
     - run: mv dist $HOME/dist
     - run: git config user.name "${GITHUB_ACTOR}"
     - run: git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-    - run: git checkout gh-pages
+    - run: git switch -c gh-pages
     - run: git rm -rf
     - run: mv $HOME/dist/* .
     - run: git status
