@@ -34,13 +34,16 @@ jobs:
     - run: ls
 
     - run: |
+        mv dist $HOME/dist
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git push origin --delete gh-pages || true
-        git switch -c gh-pages
+        git checkout gh-pages
+        git rm -rf
+        mv $HOME/dist/* .
         git status
         git add -f dist
         git status
         git commit -m "Update gh-pages with dist folder"
         git push -f origin gh-pages
         git checkout main
+        rm -rf $HOME/dist
