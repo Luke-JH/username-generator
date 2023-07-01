@@ -38,7 +38,7 @@ jobs:
     - run: git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
     - run: git switch -c gh-pages
     - run: git rm -rf .
-    - run: cp -R /tmp/dist/* .
+    - run: cp -R /tmp/dist .
     - run: ls
     - run: git status
     - run: git add -f dist
