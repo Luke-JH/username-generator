@@ -37,10 +37,7 @@ jobs:
     - run: git config user.name "${GITHUB_ACTOR}"
     - run: git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
     - run: git switch -c gh-pages
-    # removes .gitignore so all files can be deleted
-    - run: git rm -rf .gitignore
-    - run: ls
-    # removes node_modules so all files can be deleted
+    # removes node_modules
     - run: rm -rf node_modules
     - run: ls
     # deletes everything else
