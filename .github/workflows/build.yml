@@ -40,6 +40,9 @@ jobs:
     # removes .gitignore so all files can be deleted
     - run: git rm -rf .gitignore
     - run: ls
+    # removes node_modules so all files can be deleted
+    - run: git rm -rf node_modules
+    - run: ls
     # deletes everything else
     - run: git rm -rf .
     - run: cp -R /tmp/dist/* ./
