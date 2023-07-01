@@ -41,7 +41,7 @@ jobs:
     - run: git rm -rf .gitignore
     - run: ls
     # removes node_modules so all files can be deleted
-    - run: git rm -rf node_modules
+    - run: git rm -rf --ignore-unmatch node_modules
     - run: ls
     # deletes everything else
     - run: git rm -rf .
