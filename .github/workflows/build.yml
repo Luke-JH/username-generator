@@ -37,6 +37,10 @@ jobs:
     - run: git config user.name "${GITHUB_ACTOR}"
     - run: git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
     - run: git switch -c gh-pages
+    # removes .gitignore so all files can be deleted
+    - run: git rm -rf .gitignore
+    - run: ls
+    # deletes everything else
     - run: git rm -rf .
     - run: cp -R /tmp/dist/* ./
     - run: ls
@@ -46,4 +50,4 @@ jobs:
     - run: git commit -m "Update gh-pages with dist folder"
     - run: git push -f origin gh-pages
     - run: git checkout main
-    - run: rm -rf $HOME/dist
+    - run: rm -rf /tmp/dist
