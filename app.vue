@@ -1,7 +1,7 @@
 <template>
-  <Header />
+    <Header />
 
-  <Generator class="mt-40 mb-40" />
+    <Generator class="mt-40 mb-40" />
 
-  <Footer />
+    <Footer />
 </template>
