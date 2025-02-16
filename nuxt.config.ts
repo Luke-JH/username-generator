@@ -4,5 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   css: ["assets/css/tailwind.css"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/eslint"],
 });
