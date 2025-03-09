@@ -20,8 +20,8 @@
                     Generate Alternatives
                 </button>
             </div>
-            <div v-for="newName in newNames" :key="newName" class="flex items-center gap-3">
-                <p>{{ newName }}</p>
+            <div v-for="newName in newNames" :key="newName" class="grid grid-cols-2">
+                <p class="self-center">{{ newName }}</p>
                 <button
                     class="button rounded-lg bg-primary hover:bg-primary-hover text-white p-3"
                     @click="copyText(newName)"
