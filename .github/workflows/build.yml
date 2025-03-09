@@ -43,7 +43,7 @@ jobs:
             - run: git rm -rf .
             - run: cp -R /tmp/dist/* ./
             - run: ls
-            - run: rm -rf ./.output && rm -rf dist
+            - run: rm -rf ./.output && rm -rf dist && rm -rf ./.nuxt
             - run: ls
             - run: git status
             - run: git add .
