@@ -52,7 +52,7 @@ jobs:
               run: npm run generate
 
             - name: show the files
-              run: ls -a .output/public
+              run: ls -a .output/public/_nuxt/
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
