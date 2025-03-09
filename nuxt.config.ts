@@ -10,9 +10,4 @@ export default defineNuxtConfig({
             "Roboto Mono": true,
         },
     },
-    nitro: {
-        prerender: {
-            routes: ["/"],
-        },
-    },
 });
