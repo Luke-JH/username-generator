@@ -51,6 +51,9 @@ jobs:
             - name: Static HTML export with Nuxt
               run: npm run generate
 
+            - name: show the files
+              run: ls -a .output/public
+
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
