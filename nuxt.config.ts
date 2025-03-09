@@ -10,4 +10,12 @@ export default defineNuxtConfig({
             "Roboto Mono": true,
         },
     },
+    app: {
+        baseURL: "username-gen.com",
+    },
+    nitro: {
+        prerender: {
+            routes: ["/"],
+        },
+    },
 });
