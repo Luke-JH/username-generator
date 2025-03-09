@@ -41,6 +41,7 @@ jobs:
             - run: ls
             # deletes everything else
             - run: git rm -rf .
+            - run: ls -a
             - run: cp -R /tmp/dist/* ./
             - run: ls
             - run: rm -rf ./.output && rm -rf dist && rm -rf ./.nuxt
