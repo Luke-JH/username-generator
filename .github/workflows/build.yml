@@ -40,7 +40,7 @@ jobs:
             - run: rm -rf node_modules
             - run: ls
             # deletes everything else
-            - run: rm -rf .
+            - run: rm -rf ./*
             - run: ls -a
             - run: cp -R /tmp/dist/* ./
             - run: ls
