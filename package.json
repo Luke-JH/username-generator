@@ -3,9 +3,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "mkdir dist && echo https://www.username-gen.com/ > ./dist/CNAME && nuxt build",
+        "build": "nuxt build",
         "dev": "nuxt dev",
-        "generate": "nuxt generate",
+        "generate": "nuxt generate && echo https://www.username-gen.com/ > ./.output/public/CNAME",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
         "lint": "eslint .",
