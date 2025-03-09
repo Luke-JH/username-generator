@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center gap-5">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-center">
             <div class="text-2xl font-bold">Username Generator</div>
             <h5 class="text-lg">Create alternative username options for if yours is taken.</h5>
         </div>
