@@ -7,6 +7,7 @@
         <div class="flex flex-col items-center gap-5">
             <div class="flex items-center gap-3">
                 <input
+                    id="username-input"
                     v-model="name"
                     class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 max-w-72"
                     type="text"
