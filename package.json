@@ -12,7 +12,8 @@
         "lint-fix": "eslint . --fix --ignore-pattern .gitignore",
         "prettier": "prettier . --check",
         "prettier-fix": "prettier . --write",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "typecheck": "nuxt typecheck"
     },
     "dependencies": {
         "@eslint/js": "^9.20.0",
@@ -26,6 +27,7 @@
     },
     "devDependencies": {
         "@nuxtjs/tailwindcss": "^6.13.1",
-        "prettier": "^3.5.1"
+        "prettier": "^3.5.1",
+        "vue-tsc": "^2.2.12"
     }
 }
