@@ -24,6 +24,12 @@ npm run prettier
 npm run lint
 ```
 
+### Test the code with Vitest
+
+```bash
+npm run test
+```
+
 ### Development Server
 
 Start the development server on `http://localhost:3000`:
