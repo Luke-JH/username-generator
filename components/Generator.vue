@@ -35,10 +35,10 @@
 </template>
 <script setup lang="ts">
 const name = ref("");
-const newNames: Ref<string[]> = ref([]);
+const newNames = ref<string[]>([]);
 
 const generateNames = () => {
-    const additions = [".", "-", "_", ".-", "._", "-.", "-_", "_.", "_-"];
+    const additions = usernameAdditions; // auto imported from utils
     if (name.value) {
         newNames.value = additions.map((addition) => name.value.concat(addition));
     }
