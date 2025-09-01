@@ -4,7 +4,12 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     ssr: false,
     css: ["~/assets/tailwind.css"],
-    modules: ["@nuxtjs/tailwindcss", "@nuxt/eslint", "@nuxtjs/google-fonts"],
+    modules: [
+        "@nuxtjs/tailwindcss",
+        "@nuxt/eslint",
+        "@nuxtjs/google-fonts",
+        "@nuxt/test-utils/module",
+    ],
     googleFonts: {
         families: {
             "Roboto Mono": true,
