@@ -12,10 +12,11 @@ const mountAndGenerateUsernames = async (activation: "click" | "enter") => {
     await textInput.setValue(testUsername);
 
     switch (activation) {
-        case "click":
+        case "click": {
             const button = component.get("button");
             await button.trigger("click");
             break;
+        }
         case "enter":
             await textInput.trigger("keyup.enter");
             break;
