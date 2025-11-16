@@ -3,7 +3,7 @@ const useToastStore = defineStore("toasts", {
         toasts: new Map(),
     }),
     actions: {
-        addToast(toast: Toast, ttl = 7000) {
+        addToast(toast: Toast, ttl = 2000) {
             const now = Date.now();
             this.toasts.set(now, toast);
             if (ttl === 0) return now;
