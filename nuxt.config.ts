@@ -9,10 +9,21 @@ export default defineNuxtConfig({
         "@nuxt/eslint",
         "@nuxtjs/google-fonts",
         "@nuxt/test-utils/module",
+        "@pinia/nuxt",
+        "@vesp/nuxt-fontawesome",
     ],
     googleFonts: {
         families: {
             "Roboto Mono": true,
+        },
+    },
+    imports: {
+        dirs: ["@/types"],
+    },
+    fontawesome: {
+        icons: {
+            // Alphabetically ordered icons
+            solid: ["check", "circle-xmark", "exclamation"],
         },
     },
 });

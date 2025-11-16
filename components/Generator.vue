@@ -34,8 +34,10 @@
     </div>
 </template>
 <script setup lang="ts">
+// Config
 const name = ref("");
 const newNames = ref<string[]>([]);
+const toastStore = useToastStore();
 
 const generateNames = () => {
     const additions = usernameAdditions; // auto imported from utils
@@ -44,5 +46,18 @@ const generateNames = () => {
     }
 };
 
-const copyText = (text: string) => navigator.clipboard.writeText(text);
+const copyText = (text: string) => {
+    try {
+        navigator.clipboard.writeText(text);
+        toastStore.addToast({
+            text: "Text copied successfully",
+            icon: ["fas", "check"],
+        });
+    } catch {
+        toastStore.addToast({
+            text: "An error occurred when copying the text",
+            icon: ["fas", "exclamation"],
+        });
+    }
+};
 </script>
