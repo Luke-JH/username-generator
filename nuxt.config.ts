@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     fontawesome: {
         icons: {
             // Alphabetically ordered icons
-            solid: ["check", "circle-xmark", "exclamation"],
+            solid: ["check", "circle-xmark", "copy", "exclamation", "microchip"],
         },
     },
 });
