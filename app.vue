@@ -1,7 +1,7 @@
 <template>
-    <Header />
-    <Generator class="mt-40 mb-40 mx-5" />
-    <Footer />
+    <NuxtLayout>
+        <NuxtPage />
+    </NuxtLayout>
 
     <TransitionGroup name="toasts" tag="div" class="fixed top-[20px] right-[20px] z-50">
         <Toast
