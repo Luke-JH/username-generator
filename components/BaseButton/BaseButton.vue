@@ -1,7 +1,7 @@
 <template>
     <button
         :class="`flex ${stackContent && 'flex-col gap-1'} items-center button rounded-lg bg-primary hover:bg-primary-hover text-white p-3`"
-        @click="$emit('clicked')"
+        @click="emit('clicked')"
     >
         <p v-if="text">{{ text }}</p>
         <font-awesome v-if="icon" :icon="icon" size="lg" />
@@ -14,4 +14,6 @@ interface Props {
     stackContent?: boolean;
 }
 defineProps<Props>();
+
+const emit = defineEmits(["clicked"]);
 </script>
