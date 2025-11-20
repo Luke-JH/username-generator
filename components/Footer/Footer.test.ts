@@ -9,9 +9,7 @@ describe("Footer component", () => {
     });
     it("renders text", async () => {
         const component = await mountSuspended(Footer);
-        expect(component.text()).toContain(
-            "Thank you for using the username generator, have a nice day.",
-        );
+        expect(component.text()).toContain("See the GitHub Repo here");
     });
     it("displays the correct year", async () => {
         const component = await mountSuspended(Footer);
