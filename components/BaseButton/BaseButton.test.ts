@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 
 // Mock data
 const mockText = "Test this text";
-const mockIcon = <[string, string]>["fas", "check"];
+const mockIcon: [string, string] = ["fas", "check"];
 
 // Abstracted component mount
 const mountComponent = async () => {
